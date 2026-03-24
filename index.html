@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bài tập 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">🎥 Danh sách phim muốn xem</h1>
+      <input
+        type="text"
+        id="input-film"
+        placeholder="Tiêu đề phim"
+        class="input-film"
+      />
+      <br />
+      <textarea
+        placeholder="Lý do/ Mô tả muốn xem..."
+        class="text-box"
+        cols="30"
+        rows="7"
+        id="text-box"
+      ></textarea>
+      <br />
+      <div class="button">
+        <button class="button-save" id="save">Lưu phim</button>
+        <button class="button-delete" id="delete">Xóa tất cả</button>
+      </div>
+      <h2 class="list" id="count">Danh sách của bạn(0)</h2>
+      <div class="list-film"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
