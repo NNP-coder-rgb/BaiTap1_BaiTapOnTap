@@ -6,7 +6,7 @@ const btnDeleteAll = document.querySelector(".button-delete");
 const listContainer = document.querySelector(".list");
 const countDisplay = document.getElementById("count");
 
-// Khởi tạo danh sách phim từ sessionStorage
+// Khởi tạo danh sách phim từ localStorage
 let movieList = JSON.parse(sessionStorage.getItem("movieList")) || [];
 
 // Hàm format thời gian
@@ -62,7 +62,7 @@ function renderList() {
   });
 }
 
-// Lưu danh sách phim vào sessionStorage và render lại
+// Lưu danh sách phim vào localStorage và render lại
 function saveAndRender() {
   localStorage.setItem("movieList", JSON.stringify(movieList));
   renderList();
