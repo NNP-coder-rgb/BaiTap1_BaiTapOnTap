@@ -7,7 +7,7 @@ const listContainer = document.querySelector(".list");
 const countDisplay = document.getElementById("count");
 
 // Khởi tạo danh sách phim từ localStorage
-let movieList = JSON.parse(sessionStorage.getItem("movieList")) || [];
+let movieList = JSON.parse(localStorage.getItem("movieList")) || [];
 
 // Hàm format thời gian
 function formatDate(date) {
